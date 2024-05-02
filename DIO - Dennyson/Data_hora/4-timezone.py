@@ -1,9 +1,7 @@
-import pytz
-from datetime import datetime
+from datetime import datetime,timezone,timedelta
 
-d =  datetime.now(pytz.timezone('Europe/Oslo'))
-dt = datetime.now(pytz.timezone('America/Sao_Paulo'))
-d1= datetime.now(pytz.timezone('America/New_York'))
-da = datetime.now(pytz.timezone('Asia/Tokyo'))
+dt_oslo =  datetime.now(timezone(timedelta(hours=2)))
+dt_sp = datetime.now(timezone(timedelta(hours=-3),'BR'))
 
-print(d,'\n',dt,'\n',d1,'\n',da)
+
+print(dt_oslo,'\n',dt_sp)
