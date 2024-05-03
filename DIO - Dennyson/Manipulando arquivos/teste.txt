@@ -1,0 +1,5 @@
+testando escrevar no arquivo.
+Python 
+um 
+novo 
+texto.
